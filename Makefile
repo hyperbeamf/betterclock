@@ -1,5 +1,4 @@
 filename ?= "betterclock.sh"
-create: betterclock
 betterclock:
 	cp $(filename) betterclock
 	chmod 775 betterclock
@@ -13,4 +12,4 @@ remove: clean
 clean: betterclock
 	rm betterclock
 
-.PHONY: install remove clean create
+.PHONY: install remove clean
